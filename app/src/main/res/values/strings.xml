@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GuessTheMelody</string>
+    <string name="btnStart">Начать</string>
+    <string name="btnPrams">Настройки</string>
+    <string name="btnExit">Выход</string>
+
+</resources>
