@@ -39,7 +39,6 @@
                 android:id="@+id/btnStart"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-
                 android:background="@drawable/button_stroke_black95_press_white"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
@@ -52,7 +51,6 @@
                 android:id="@+id/btnParams"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:background="@drawable/button_stroke_black95_press_white"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
