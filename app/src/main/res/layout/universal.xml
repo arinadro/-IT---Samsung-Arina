@@ -51,30 +51,30 @@
             android:orientation="horizontal"
             android:layout_weight="25">
 
-                <TextView
-                    android:id="@+id/textView1"
+                <Button
+                    android:id="@+id/button1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_stroke_black95_press_white"
                     android:layout_weight="1"
-                    android:text="TextView"
+                    android:text="Button"
                     android:textSize="24dp"
                     android:textColor="@color/white"
                     android:gravity="center"
                     android:textAllCaps="false"/>
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/button_stroke_black95_press_white"
-                    android:layout_weight="1"
-                    android:text="TextView"
-                    android:textSize="24dp"
-                    android:textColor="@color/white"
-                    android:gravity="center"
-                    android:textAllCaps="false"/>
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_stroke_black95_press_white"
+                android:layout_weight="1"
+                android:text="Button"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textAllCaps="false"/>
 
             </LinearLayout>
 
@@ -83,26 +83,26 @@
                 android:layout_height="150dp"
                 android:orientation="horizontal"
                 android:layout_weight="25">
-                <TextView
-                    android:id="@+id/textView3"
+                <Button
+                    android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_stroke_black95_press_white"
                     android:layout_weight="1"
-                    android:text="TextView"
+                    android:text="Button"
                     android:textSize="24dp"
                     android:textColor="@color/white"
                     android:gravity="center"
                     android:textAllCaps="false"/>
-                <TextView
-                    android:id="@+id/textView4"
+                <Button
+                    android:id="@+id/button4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_stroke_black95_press_white"
                     android:layout_weight="1"
-                    android:text="TextView"
+                    android:text="Button"
                     android:textSize="24dp"
                     android:textColor="@color/white"
                     android:gravity="center"
