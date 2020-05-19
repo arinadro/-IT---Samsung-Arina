@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Level1 extends AppCompatActivity {
+public class Level2 extends AppCompatActivity {
     Button play;
 
     @Override
@@ -16,7 +16,7 @@ public class Level1 extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         play = (Button) findViewById(R.id.play);
-        final MediaPlayer mediaPlayer = MediaPlayer.create(Level1.this, R.music.Август.mp3);
+        final MediaPlayer mediaPlayer = MediaPlayer.create(Level2.this, R.music.DanceMonkey.mp3);
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override

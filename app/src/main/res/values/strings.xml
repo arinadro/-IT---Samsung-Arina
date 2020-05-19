@@ -17,5 +17,15 @@
     <string name="editText3">Введите число</string>
     <string name="plus">Сколько прибавлять </string>
     <string name="minus">Сколько отнимать </string>
+    <string name="answer1">Last Dance </string>
+    <string name="answer2">Dance Monkey </string>
+    <string name="answer3">Cake by the ocean </string>
+    <string name="answer4">Love You Like A Love Song </string>
+    <string name="sanswer1">Senorita </string>
+    <string name="sanswer2">Havana </string>
+    <string name="sanswer3">Liar </string>
+    <string name="sanswer4">Worth It </string>
+    <string name="result">Результат : </string>
+    <string name="winner">ПОБЕДИТЕЛЬ!!!  </string>
 
 </resources>
