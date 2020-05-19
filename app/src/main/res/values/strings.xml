@@ -3,5 +3,14 @@
     <string name="btnStart">Начать</string>
     <string name="btnPrams">Настройки</string>
     <string name="btnExit">Выход</string>
+    <string name="textView1">Игрок 1: 0</string>
+    <string name="textView2">Игрок 2: 0</string>
+    <string name="play">Воспроизвести</string>
+    <string name="button1">Апрель</string>
+    <string name="button2">Июнь</string>
+    <string name="button3">Июль</string>
+    <string name="button4">Август</string>
+    <string name="button5">Игрок 1</string>
+    <string name="button6">Игрок 2</string>
 
 </resources>
