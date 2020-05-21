@@ -1,24 +1,17 @@
 package com.example.guessthemelody;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.icu.text.Edits;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btnStart,btnParams,btnExit;
+    Button btnStart,btnExit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +21,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnStart = (Button)findViewById(R.id.btnStart);
         btnStart.setOnClickListener(this);
 
-        btnParams = (Button)findViewById(R.id.btnParams);
-        btnParams.setOnClickListener(this);
 
         btnExit = (Button)findViewById(R.id.btnExit);
         btnExit.setOnClickListener(new View.OnClickListener() {
@@ -71,12 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent intent;
         switch (v.getId()){
-            case R.id.btnParams:
-                intent = new Intent(this, Params.class);
-                startActivity(intent);
-                break;
             case R.id.btnStart:
-                intent = new Intent(this, Level1.class);
+                intent = new Intent(this, Game.class);
                 startActivity(intent);
                 break;
         }

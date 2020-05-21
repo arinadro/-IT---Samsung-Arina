@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Угадай мелодию!</string>
     <string name="btnStart">Начать</string>
-    <string name="btnPrams">Настройки</string>
     <string name="btnExit">Выход</string>
     <string name="back">Назад</string>
     <string name="save">Сохранить</string>
@@ -10,23 +9,8 @@
     <string name="score1"> 0 </string>
     <string name="score2"> 0 </string>
     <string name="play">Воспроизвести</string>
-    <string name="button1">Апрель</string>
-    <string name="button2">Июнь</string>
-    <string name="button3">Июль</string>
-    <string name="button4">Август</string>
     <string name="button5">Игрок 1</string>
     <string name="button6">Игрок 2</string>
-    <string name="editText3">Введите число</string>
-    <string name="plus">Сколько прибавлять </string>
-    <string name="minus">Сколько отнимать </string>
-    <string name="answer1">Last Dance </string>
-    <string name="answer2">Dance Monkey </string>
-    <string name="answer3">Cake by the ocean </string>
-    <string name="answer4">Love You Like A Love Song </string>
-    <string name="sanswer1">Senorita </string>
-    <string name="sanswer2">Havana </string>
-    <string name="sanswer3">Liar </string>
-    <string name="sanswer4">Worth It </string>
     <string name="result">Результат : </string>
     <string name="winner">ПОБЕДИТЕЛЬ!!!  </string>
 

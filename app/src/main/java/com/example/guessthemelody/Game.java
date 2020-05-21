@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -25,6 +25,7 @@ public class Game extends AppCompatActivity {
     Button button4;
     Button buttonPlayer1;
     Button buttonPlayer2;
+    public int count = 0;
 
     String playerAnswe; //кто отвечает
     String playerAnswer; // ответ
@@ -72,6 +73,7 @@ public class Game extends AppCompatActivity {
                 }
                 playCountClick++;
             }
+
         });
 
         DBHelper db = new DBHelper(this);
@@ -127,6 +129,31 @@ public class Game extends AppCompatActivity {
                 } else {
                     Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
                 }
+            }
+            @Override
+            public boolean onTouch(View view, MotionEvent event){
+                if(event.getAction()==MotionEvent.ACTION_DOWN){
+                    button2.setEnabled(false);//блокировка кнопок с неправильным ответом
+                    button3.setEnabled(false);
+                    button4.setEnabled(false);
+                  } else if(event.getAction()==MotionEvent.ACTION_UP){
+                    if(buttonPlayer1.isClickable()){//счетчик правильных ответов
+                        if (count<3){
+                            count=count+1;
+                        }
+                        for(int i=0; i<5;i++){
+                            TextView tv = findViewById(R.id.score1);
+                            tv.setText(count);
+                        }
+                    }else {
+                        TextView tv = findViewById(R.id.score2);
+                        tv.setText(count);
+                    }
+                }
+                button2.setEnabled(true);//разблокировка кнопок с неправильным ответом
+                button3.setEnabled(true);
+                button4.setEnabled(true);
+                return true;
             }
         });
 

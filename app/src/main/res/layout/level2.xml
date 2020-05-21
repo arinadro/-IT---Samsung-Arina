@@ -19,32 +19,71 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingBottom="10dp">
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            android:gravity="start"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/textView1"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:paddingBottom="20dp"/>
+            <TextView
+                android:id="@+id/score1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/score1"
+                android:textAllCaps="false"
+                android:background="@drawable/style_btn_stroke_black95"
+                android:textColor="@color/red"
+                android:paddingBottom="20dp"/>
 
-            android:text="@string/textView1"
-            android:textAllCaps="false"
-            android:textColor="@color/red"
-            android:paddingBottom="20dp"/>
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="40dp"
-            android:gravity="start"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:text="@string/textView2"
-            android:textAllCaps="false"
-            android:textColor="@color/blue"
-            android:paddingBottom="20dp"/>
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/textView2"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:paddingBottom="20dp"/>
+            <TextView
+                android:id="@+id/score2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/score2"
+                android:textAllCaps="false"
+                android:background="@drawable/style_btn_stroke_black95"
+                android:textColor="@color/blue"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+
 
     </LinearLayout>
 

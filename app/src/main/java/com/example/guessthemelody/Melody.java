@@ -12,26 +12,32 @@ public class Melody {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public int getAnswe() {
+
         return answe;
     }
 
     public void setAnswe(int answe) {
+
         this.answe = answe;
     }
 
     public int getLevel() {
+
         return level;
     }
 
     public void setLevel(int level) {
+
         this.level = level;
     }
 }

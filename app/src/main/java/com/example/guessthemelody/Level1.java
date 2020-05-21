@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -18,8 +17,6 @@ public class Level1 extends AppCompatActivity {
 
     TextView textView1;
     TextView textView2;
-    TextView score1;
-    TextView score2;
     Button play;
     Button button1;
     Button button2;
@@ -31,13 +28,14 @@ public class Level1 extends AppCompatActivity {
     String playerAnswe; //кто отвечает
     String playerAnswer; // ответ
     String correctAnswer; // правильный ответ
+    public int count = 0;
 
     ArrayList<Button> buttonsArr = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.level1);
+        setContentView(R.layout.universal);
         //Разворот экрана на всю
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
