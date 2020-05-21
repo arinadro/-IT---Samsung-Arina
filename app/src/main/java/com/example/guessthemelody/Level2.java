@@ -16,7 +16,7 @@ public class Level2 extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         play = (Button) findViewById(R.id.play);
-        final MediaPlayer mediaPlayer = MediaPlayer.create(Level2.this, R.music.DanceMonkey.mp3);
+        final MediaPlayer mediaPlayer = MediaPlayer.create(Level2.this, R.raw.kometa);
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -5,8 +5,10 @@
     <string name="btnExit">Выход</string>
     <string name="back">Назад</string>
     <string name="save">Сохранить</string>
-    <string name="textView1">Игрок 1: 0</string>
-    <string name="textView2">Игрок 2: 0</string>
+    <string name="textView1">Игрок 1: </string>
+    <string name="textView2">Игрок 2: </string>
+    <string name="score1"> 0 </string>
+    <string name="score2"> 0 </string>
     <string name="play">Воспроизвести</string>
     <string name="button1">Апрель</string>
     <string name="button2">Июнь</string>

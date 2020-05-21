@@ -16,7 +16,7 @@ public class Level3 extends AppCompatActivity {
             setContentView(R.layout.activity_main);
 
             play = (Button) findViewById(R.id.play);
-            final MediaPlayer mediaPlayer = MediaPlayer.create(Level3.this, R.music.Senorita.mp3);
+            final MediaPlayer mediaPlayer = MediaPlayer.create(Level3.this, R.raw.senorita);
 
             play.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -26,4 +26,4 @@ public class Level3 extends AppCompatActivity {
             });
         }
     }
-}
+

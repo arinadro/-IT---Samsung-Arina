@@ -2,17 +2,23 @@ package com.example.guessthemelody;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
+import android.icu.text.Edits;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnStart,btnParams,btnExit;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        DBHelper db = new DBHelper(this);
+
+        ArrayList<Melody> melodies = new ArrayList<>();
+        melodies.add(new Melody("Август", 1, 1));
+        melodies.add(new Melody("Апрель", 0, 1));
+        melodies.add(new Melody("Июнь", 0, 1));
+        melodies.add(new Melody("Июль", 0, 1));
+        melodies.add(new Melody("Ракета", 0, 2));
+        melodies.add(new Melody("Монета", 0, 2));
+        melodies.add(new Melody("Ко мне так", 0, 2));
+        melodies.add(new Melody("Комета", 1, 2));
+        melodies.add(new Melody("Worth It", 0, 3));
+        melodies.add(new Melody("Havana", 0, 3));
+        melodies.add(new Melody("Senorita", 1, 3));
+        melodies.add(new Melody("Liar", 0, 3));
+
+        db.insertData(melodies);
+        //db.clear(); // Для очистки таблиц
+        db.close();
     }
 
     @Override
@@ -50,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.btnStart:
-                intent = new Intent(this, Game.class);
+                intent = new Intent(this, Level1.class);
                 startActivity(intent);
                 break;
         }
