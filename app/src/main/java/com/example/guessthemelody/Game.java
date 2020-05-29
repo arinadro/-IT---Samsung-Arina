@@ -36,7 +36,7 @@ public class Game extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.universal);
+        setContentView(R.layout.level1);
         //Разворот экрана на всю
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
@@ -130,7 +130,7 @@ public class Game extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
                 }
             }
-            /*@Override
+            @Override
             public boolean onTouch(View view, MotionEvent event){
                 if(event.getAction()==MotionEvent.ACTION_DOWN){
                     button2.setEnabled(false);//блокировка кнопок с неправильным ответом
@@ -154,7 +154,7 @@ public class Game extends AppCompatActivity {
                 button3.setEnabled(true);
                 button4.setEnabled(true);
                 return true;
-            }*/
+            }
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
