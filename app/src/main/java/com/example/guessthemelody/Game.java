@@ -130,7 +130,7 @@ public class Game extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
                 }
             }
-            @Override
+            /*@Override
             public boolean onTouch(View view, MotionEvent event){
                 if(event.getAction()==MotionEvent.ACTION_DOWN){
                     button2.setEnabled(false);//блокировка кнопок с неправильным ответом
@@ -154,7 +154,7 @@ public class Game extends AppCompatActivity {
                 button3.setEnabled(true);
                 button4.setEnabled(true);
                 return true;
-            }
+            }*/
         });
 
         button2.setOnClickListener(new View.OnClickListener() {

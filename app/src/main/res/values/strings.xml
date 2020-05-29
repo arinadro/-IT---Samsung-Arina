@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Угадай мелодию!</string>
     <string name="btnStart">Начать</string>
+    <string name="btnPrams">Настройки</string>
     <string name="btnExit">Выход</string>
     <string name="back">Назад</string>
     <string name="save">Сохранить</string>
+    <string name="editText3">Введите число</string>
+    <string name="plus">Сколько прибавлять </string>
+    <string name="minus">Сколько отнимать </string>
     <string name="textView1">Игрок 1: </string>
     <string name="textView2">Игрок 2: </string>
     <string name="score1"> 0 </string>

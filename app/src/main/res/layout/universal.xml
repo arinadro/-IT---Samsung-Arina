@@ -124,7 +124,7 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_stroke_black95_press_white"
                     android:layout_weight="1"
-                    android:text="Button"
+                    android:text="***"
                     android:textSize="24dp"
                     android:textColor="@color/white"
                     android:gravity="center"
@@ -136,7 +136,7 @@
                 android:layout_marginRight="10dp"
                 android:background="@drawable/button_stroke_black95_press_white"
                 android:layout_weight="1"
-                android:text="Button"
+                android:text="***"
                 android:textSize="24dp"
                 android:textColor="@color/white"
                 android:gravity="center"
@@ -149,18 +149,19 @@
                 android:layout_height="250dp"
                 android:orientation="horizontal"
                 android:layout_weight="1">
+
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:background="@drawable/button_stroke_black95_press_white"
                     android:layout_weight="1"
-                    android:text="Button"
-                    android:textSize="24dp"
-                    android:textColor="@color/white"
+                    android:background="@drawable/button_stroke_black95_press_white"
                     android:gravity="center"
-                    android:textAllCaps="false"/>
+                    android:text="***"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
                 <Button
                     android:id="@+id/button4"
                     android:layout_width="wrap_content"
@@ -168,7 +169,7 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button_stroke_black95_press_white"
                     android:layout_weight="1"
-                    android:text="Button"
+                    android:text="***"
                     android:textSize="24dp"
                     android:textColor="@color/white"
                     android:gravity="center"
