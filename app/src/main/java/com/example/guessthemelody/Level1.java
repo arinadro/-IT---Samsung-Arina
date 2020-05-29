@@ -2,6 +2,7 @@ package com.example.guessthemelody;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +10,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -25,20 +25,33 @@ public class Level1 extends AppCompatActivity {
     Button buttonPlayer1;
     Button buttonPlayer2;
 
-    String playerAnswe; //кто отвечает
+    int whoAnswe; //кто отвечает
     String playerAnswer; // ответ
     String correctAnswer; // правильный ответ
-    public int count = 0;
+    public int countplayer1 = 0;
+    public int countplayer2 = 0;
+
+
 
     ArrayList<Button> buttonsArr = new ArrayList<>();
+
+
+    // метод для простановки баллов и перехода к следующему экрану
+    public void setBal(int countplayer1, int countplayer2){
+        Intent intent = new Intent(this, Level2.class);
+        intent.putExtra("countplayer1", countplayer1);
+        intent.putExtra("countplayer2", countplayer2);
+        startActivity(intent);
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.universal);
+        setContentView(R.layout.level1);
         //Разворот экрана на всю
         Window w = getWindow();
         w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
 
         button1 = (Button) findViewById(R.id.button1);
         button2 = (Button) findViewById(R.id.button2);
@@ -82,7 +95,7 @@ public class Level1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonPlayer2.setEnabled(false); // отключаем кнопку другому игроку
-                playerAnswe = "1";
+                whoAnswe = 1;
 
                 for(int i = 0; i < buttonsArr.size(); i++){
                     buttonsArr.get(i).setEnabled(true);
@@ -102,7 +115,7 @@ public class Level1 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 buttonPlayer1.setEnabled(false); // отключаем кнопку другому игроку
-                playerAnswe = "1";
+                whoAnswe = 2;
 
                 for(int i = 0; i < buttonsArr.size(); i++){
                     buttonsArr.get(i).setEnabled(true);
@@ -123,10 +136,20 @@ public class Level1 extends AppCompatActivity {
                 playerAnswer = button1.getText().toString();
 
                 if(playerAnswer == correctAnswer){
-                    Toast.makeText(getApplicationContext(), "Правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 + 5;
+                    } else {
+                        countplayer2 = countplayer2 + 5;
+                    }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 - 5;
+                    } else {
+                        countplayer2 = countplayer2 - 5;
+                    }
                 }
+                // простановка баллов и переход к следующему экрану
+                setBal(countplayer1, countplayer2);
             }
         });
 
@@ -136,10 +159,20 @@ public class Level1 extends AppCompatActivity {
                 playerAnswer = button2.getText().toString();
 
                 if(playerAnswer == correctAnswer){
-                    Toast.makeText(getApplicationContext(), "Правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 + 5;
+                    } else {
+                        countplayer2 = countplayer2 + 5;
+                    }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 - 5;
+                    } else {
+                        countplayer2 = countplayer2 - 5;
+                    }
                 }
+                // простановка баллов и переход к следующему экрану
+                setBal(countplayer1, countplayer2);
             }
         });
 
@@ -149,10 +182,20 @@ public class Level1 extends AppCompatActivity {
                 playerAnswer = button3.getText().toString();
 
                 if(playerAnswer == correctAnswer){
-                    Toast.makeText(getApplicationContext(), "Правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 + 5;
+                    } else {
+                        countplayer2 = countplayer2 + 5;
+                    }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 - 5;
+                    } else {
+                        countplayer2 = countplayer2 - 5;
+                    }
                 }
+                // простановка баллов и переход к следующему экрану
+                setBal(countplayer1, countplayer2);
             }
         });
 
@@ -162,10 +205,20 @@ public class Level1 extends AppCompatActivity {
                 playerAnswer = button4.getText().toString();
 
                 if(playerAnswer == correctAnswer){
-                    Toast.makeText(getApplicationContext(), "Правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 + 5;
+                    } else {
+                        countplayer2 = countplayer2 + 5;
+                    }
                 } else {
-                    Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
+                    if(whoAnswe == 1){
+                        countplayer1 = countplayer1 - 5;
+                    } else {
+                        countplayer2 = countplayer2 - 5;
+                    }
                 }
+                // простановка баллов и переход к следующему экрану
+                setBal(countplayer1, countplayer2);
             }
         });
 

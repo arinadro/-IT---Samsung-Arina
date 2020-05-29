@@ -42,6 +42,19 @@ android:orientation="vertical">
             android:textAllCaps="false"
             android:textColor="@color/gold"
             android:paddingBottom="20dp"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/gold"
+            android:textSize="40dp"
+            android:textStyle="italic" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/case1"

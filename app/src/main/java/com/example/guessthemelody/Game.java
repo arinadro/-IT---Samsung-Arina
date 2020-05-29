@@ -130,31 +130,7 @@ public class Game extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Не правильно", Toast.LENGTH_LONG).show();
                 }
             }
-            @Override
-            public boolean onTouch(View view, MotionEvent event){
-                if(event.getAction()==MotionEvent.ACTION_DOWN){
-                    button2.setEnabled(false);//блокировка кнопок с неправильным ответом
-                    button3.setEnabled(false);
-                    button4.setEnabled(false);
-                  } else if(event.getAction()==MotionEvent.ACTION_UP){
-                    if(buttonPlayer1.isClickable()){//счетчик правильных ответов
-                        if (count<3){
-                            count=count+1;
-                        }
-                        for(int i=0; i<5;i++){
-                            TextView tv = findViewById(R.id.score1);
-                            tv.setText(count);
-                        }
-                    }else {
-                        TextView tv = findViewById(R.id.score2);
-                        tv.setText(count);
-                    }
-                }
-                button2.setEnabled(true);//разблокировка кнопок с неправильным ответом
-                button3.setEnabled(true);
-                button4.setEnabled(true);
-                return true;
-            }
+
         });
 
         button2.setOnClickListener(new View.OnClickListener() {
